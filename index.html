@@ -4,78 +4,116 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link rel="stylesheet" href="style.css"/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
 	</head>
+	<!-- <style>
+		p{
+			color:red;
+		}
+
+	</style> -->
 	<body>
-		<!-- <h1>Hola soy titulo 1</h1>
-    <h2> hola soy <s>titulo</s> 2</h2>
-    <h3>3</h3>
-    <h4>4</h4>
-    <h5>5</h5>
-    <h6>6</h6>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4393.606972991691!2d-106.12681790072807!3d28.653471687112336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea42e861ed5469%3A0x798b9fb0cb1a7754!2sLivingLab%20CUU!5e0!3m2!1ses-419!2smx!4v1729734345579!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<body>
+			<!-- Navbar -->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">Mi Sitio</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Acerca de</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Servicios</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		
+			<!-- Bootstrap JavaScript -->
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		</body>
 
-    <a href="https://www.google.com" download="a-38.pdf" target="_blank">
-        <img src="/foto.PNG" alt="foto de perfil"/>
-    </a>
-    <p>Hola me llamo <br/><strong>Kaleb</strong></p> -->
+		<header class="bg-primary text-white text-center p-3">
+			<h1>Hola soy titulo 1</h1>
+		</header>
 
-		<form action="" method="post">
-			<label for="password">Password: </label>
-			<input id="password" type="password" placeholder="password" />
-			<br />
-			<label for="fecha">fecha</label>
-			<input type="date" name="fecha" id="fecha" />
-			<br />
-			<label for="color">color</label>
-			<input type="color" name="color" id="color" />
-			<br />
-			<label for="file">file</label>
-			<input type="file" name="file" id="file" accept="image/png" />
-			<br />
-			<label for="range">range</label>
-			<input type="range" name="range" id="range" />
-			<br />
-			<label for="search">search</label>
-			<input type="search" name="search" id="search" />
-			<br />
-			<label for="time">time</label>
-			<input type="time" name="time" id="time" />
-			<br />
-			<label for="url">url</label>
-			<input type="url" name="url" id="url" />
-			<br />
-			<label for="week">week</label>
-			<input type="week" name="week" id="week" />
-			<br />
-			<label for="month">month</label>
-			<input type="month" name="month" id="month" />
-			<br />
-			<label for="tel">tel</label>
-			<input type="tel" name="tel" id="tel" />
-			<br />
-			<label for="datetime-local">datetime-local</label>
-			<input type="datetime-local" name="datetime-local" id="datetime-local" />
-			<br />
-			<label for="radio">radio</label>
-			<input type="radio" name="radio" id="radio" value="1" />
-			<input type="radio" name="radio" value="2" />
-			<br />
-			<label for="checkbox">checkbox</label>
-			<input type="checkbox" name="checkbox" id="checkbox" value="2" checked />
-			<input type="checkbox" name="checkbox" id="checkbox" value="3" />
-			<br />
-			<!-- <label for="image">image</label>
-            <input type="image" name="image" id="image"/> -->
-			<label for="submit">submit</label>
-			<input type="submit" name="submit" id="submit" />
-			<br />
-			<label for="reset">reset</label>
-			<input type="reset" name="reset" id="reset" />
-			<br />
-			<label for="button">button</label>
-			<input type="button" name="button" id="button" >
-            <button type="submit">mandar</button>
-            <button type="reset">reset</button>
-		</form>
+		<div class="container my-4">
+			<button class="btn btn-primary"> Aceptar</button>
+			<button class="btn btn-secondary"> Salir</button>
+		</div>
+		<div class="card" style="width: 18rem;">
+			<img src="..." class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title">Card title</h5>
+			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			  <a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		  </div>
+
+		  <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+		<footer class="bg-dark text-white text-center p-3 fixed-bottom">
+			<p>Ejemplo de pie</p>
+		</footer>
+	
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
